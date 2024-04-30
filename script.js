@@ -6,9 +6,9 @@ Exercise 1: Define an empty array
 Exercise 1 has been completed for you:
 */
 
-const foods = [];  
+// const foods = [];  
 
-console.log('Exercise 1 result:', foods);
+// console.log('Exercise 1 result:', foods);
 
 
 /*
@@ -21,7 +21,7 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
-
+const foods = ['pizza', 'cheeseburger']
 
 console.log('Exercise 2 result:', foods);
 
@@ -34,7 +34,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-
+foods.unshift('taco')
 
 console.log('Exercise 3 result:', foods);
 
@@ -50,8 +50,7 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-
-
+let favFood = foods[1] //got help from gideon on this! 
 console.log('Exercise 4 result:', favFood);
 
 
@@ -64,7 +63,7 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
-
+foods.splice(2,0,'tofu') //for some reason i originally wrote sardines here??? why??? lol
 
 console.log('Exercise 5 result:', foods);
 
@@ -77,7 +76,8 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
-
+foods.splice(1,1, 'sushi')
+foods.splice(2, 0, 'cupcake')
 
 console.log('Exercise 6 result:', foods)
 
@@ -93,8 +93,7 @@ Exercise 7: Using the `slice()` method
 
 Complete Exercise 7 in the space below:
 */
-
-
+let yummy=foods.slice(1, 3)
 console.log('Exercise 7 result:', yummy);
 
 
@@ -110,7 +109,7 @@ Complete Exercise 8 in the space below:
 */
 
 
-
+let soyIdx = foods.indexOf('tofu')
 console.log('Exercise 8 result:', soyIdx);
 
 
@@ -128,7 +127,7 @@ Note: The final result should log as:
 Complete Exercise 9 in the space below:
 */
 
-
+let allFoods = foods.join('->')
 
 console.log('Exercise 9 result:', allFoods);
 
@@ -144,6 +143,6 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-
+let hasSoup = foods.includes('soup')
 
 console.log('Exercise 10 result:', hasSoup);
